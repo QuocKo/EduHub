@@ -1,0 +1,229 @@
+@import '../index.css';
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: Open-Sans;
+  src: url(../assets/fonts/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(../assets/fonts/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(../assets/fonts/RobotoCondensed/RobotoCondensed-Bold.ttf);
+}
+
+@font-face {
+  font-family: SmoochSans;
+  src: url(../assets/fonts/SmoochSans/SmoochSans-Bold.ttf);
+}
+
+/* Main Container */
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+  background-color: #f2e1e2;
+  padding: 0 10rem;
+  position: relative;
+}
+
+#logo img {
+  width: 1150px;
+  height: 400px;
+  position: relative;
+  /* left: 35px; */
+}
+
+#forms {
+  background: #ffffff;
+  width: 26rem;
+  border: 1px rgba(0, 0, 0, 0.385) solid;  
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.219);
+
+  border-radius: 8px;
+  
+}
+
+#forms img {
+  padding-top: 1.2rem;
+}
+
+#forms .form_input {
+  padding: 2.5rem;
+}
+
+.information {
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+#welcome-info {
+  font-size: 100px;
+  font-family: "SmoochSans", sans-serif;
+  text-align: center;
+}
+
+ #login-message {
+  font-size: 14px;
+  font-family: "BacilusGrotesque", sans-serif;
+  text-align: center;
+}
+
+/* Input Fields */
+.input-field {
+  margin: 1.2rem auto;
+}
+
+.input-field label {
+  display: block;
+  font-family: "BacilusGrotesque", sans-serif;
+  font-size: 16px;
+  margin-bottom: 0.75rem;
+}
+
+/* .input-field input::placeholder {
+  font-size: 13px;
+  color: #989292;
+  font-family: "Poppins", sans-serif;
+} */
+/* #password {
+  background-color: #F2F2F2;
+    border: none;
+}
+#email {
+  background-color: #F2F2F2;
+  border: none;
+} */
+/* 
+
+.email input::placeholder {
+  margin-top: 2px;
+}
+
+.password .icons {
+  position: relative;
+  right: 1.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+} */
+
+.sections {
+  display: flex;
+  justify-content: center;
+  /* margin-right: 3rem; */
+  font-family: "BacilusGrotesque", sans-serif;
+  font-size: 16px;
+}
+
+.section__remember input {
+  margin-right: 5px;
+}
+
+.section__remember label,
+.section__forget {
+  position: relative;
+  bottom: 2.5px;
+}
+
+.links {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.links:hover {
+  color: var(--primary-color);
+}
+
+.login__btn {
+  width: 100%;
+  margin: 20px auto;
+  padding: 10px 0;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: bold;
+  color: white;
+  background-color:#000000;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.login__btn:hover {
+  background-color: var(--primary-color);
+}
+
+.account {
+  text-align: center;
+  font-family: "BacilusGrotesque", sans-serif;
+  font-size: 16px;
+}
+
+.fixed-image-left {
+  position: fixed;
+  top: 54%;
+  left: -45px;
+  z-index: 1;
+  width: 6rem;
+}
+.fixed-image-top {
+  position: fixed;
+  top: -45px;
+  left: 53%;
+  z-index: 1;
+  width: 6rem;
+}
+.fixed-image-right {
+  position: fixed;
+  bottom: -61px;
+  z-index: 1;
+  width: 8rem;
+  right: -63px;
+}
+
+
+@media screen and (max-width: 1050px) {
+  #main {
+    display: inline-block;
+  }
+
+  #logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #forms {
+    width: 20rem;
+  }
+
+  #forms .image-container {
+    text-align: center;
+  }
+
+  #forms .form_input {
+    padding: 1.5rem;
+  }
+
+  #forms img {
+    width: 17rem;
+  }
+}
